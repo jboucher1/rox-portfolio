@@ -20,6 +20,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CopyButtonComponent } from './components/copy-button/copy-button.component';
 import { ClipboardModule } from 'ngx-clipboard';
 import { CommonModule } from '@angular/common';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { CommonModule } from '@angular/common';
     MatInputModule,
     MatTabsModule,
     FlexLayoutModule,
-    ClipboardModule
+    ClipboardModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [ContainerComponent]

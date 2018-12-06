@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, OnInit, Inject } from '@angular/core';
+import { SwUpdate } from '@angular/service-worker';
 
 @Component({
   selector: 'container',
@@ -11,9 +13,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(updates: SwUpdate, @Inject(DOCUMENT) dom: Document) {
+     updates.available.subscribe(event => {
+      updates.activateUpdate().then(() => dom.location.reload())
+    });
+  }
 
   ngOnInit() {
+
   }
 
 }
