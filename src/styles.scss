@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin:0;
+}
+html{
+  height:100%;
+  width: 100%;
+  color:#37474f;
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  height: 100%;
+  width:100%;
+  position:fixed;
+  overflow:hidden;
+}
+
+
+::-webkit-scrollbar { display: none !important; }
+
+#container {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; 
+  overflow: -moz-scrollbars-none;
+  overflow-y:scroll;
+  height:100%;
+  width:100%;
+}
+
+.text-xl{
+  font-size:5em;
+  padding-bottom:18px;
+}
+.text-large{
+  font-size:2.5em;
+  padding-bottom:18px;
+}
+.text-medium{
+  font-size:2em;
+  padding-bottom:18px;
+}
+.text-small{
+  font-size:1.5em;
+  padding-bottom:18px;
+}
+
+@media (max-width: 599px){
+  body{
+    font-size:70%;
+  }
+} 
+
+.container{
+  max-width:1300px !important;
+  padding:24px;
+  margin:0 auto;
+  width:100%;
+}
+
+
+

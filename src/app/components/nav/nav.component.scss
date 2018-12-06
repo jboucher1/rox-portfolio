@@ -1,0 +1,75 @@
+#nav{
+    position: fixed;
+    top:0;
+    opacity:5;
+    font-size:1.6em;
+    width:100%;
+    background-color:rgba(192,254,239,.8);
+    z-index:1;
+}
+#nav-inner{
+    height:70px;
+}
+#nav-text{
+    span{
+        margin-left:24px;
+        cursor: pointer;
+    }
+    
+    font-weight: 100;
+}
+
+// #menu{
+//     height:calc(100vh - 70px);
+    
+// }
+#nav-logo{
+    background-repeat:no-repeat;
+    height:45px;
+    width:100%;
+    background-image:url(./BouchDesignsLogo.svg)
+}
+// #nav-icon {
+//     width: 40px;
+//     height: 40px;
+//     position: relative;
+//     cursor: pointer;
+//   }
+  
+//   #nav-icon span {
+//     display: block;
+//     position: absolute;
+//     height: 4px;
+//     width: 100%;
+//     background: #37474f;
+//     border-radius: 9px;
+//     transition: all .25s ease-in-out;
+//     transform-origin: center center;
+//   }
+  
+//   #nav-icon span:nth-child(1) {
+//     top: 5px;
+//   }
+  
+//   #nav-icon span:nth-child(2) {
+//     top: 17px;
+//   }
+  
+//   #nav-icon span:nth-child(3) {
+//     top: 29px;
+//   }
+  
+//   #nav-icon.open span:nth-child(1) {
+//     transform: rotate(45deg);
+//     top:17px;
+//   }
+  
+//   #nav-icon.open span:nth-child(2) {
+//     width: 0%;
+//     opacity: 0;
+//   }
+  
+//   #nav-icon.open span:nth-child(3) {
+//     transform: rotate(-45deg);
+//     top:17px;
+//   }

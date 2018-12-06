@@ -1,0 +1,12 @@
+<div class="work-card-wrapper" fxLayout="row wrap">
+   <div class="work-card-inner" fxLayout="column" fxFlex="50" fxFlex.lt-md="100" *ngFor="let work of $work; let i = index" routerLink="/my-work/{{work.id}}">
+    
+      <img src="{{work.thumbnail}}" width="100%"/>
+      <div class="work-card-info" fxLayout="column">
+        <span class="text-medium">{{work.title}}</span>
+        <span class="text-small">{{work.subtitle}}</span>
+        <div><custom-button label="See More"></custom-button></div>
+      </div>
+
+  </div>
+</div>

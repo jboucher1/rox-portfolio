@@ -1,0 +1,31 @@
+<div id="portfolio">
+  <div class="portfolio-content">
+    <div fxLayout="column" fxLayoutAlign="start start" class="container">
+      <span class="text-large">{{$portfolios[id].title}}</span>
+      <span class="text-small">{{$portfolios[id].description}}</span>
+    </div>
+  </div>
+  <div class="portfolio-images" fxLayout="row wrap" fxLayoutAlign="start start">
+    <div *ngFor="let id of $portfolios[id].images; let i = index" fxFlex="50" fxFlex.lt-sm="100" class="portfolio-images-inner">
+      <div style="position:relative;">
+        <img src="{{getAssetById(id).url}}" width="100%" />
+        <a class="portfolio-images-inner-link" *ngIf="getAssetById(id).link" href="{{getAssetById(id).link}}" target="_blank" fxLayout="row" fxLayoutAlign="center center">
+          <span fxLayout="row" fxLayoutAlign="center center"><mat-icon>{{getAssetById(id).icon}}</mat-icon></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-navigation">
+    <div class="portfolio-navigation-inner" fxLayout="row" fxLayoutAlign="center center">
+      <div fxFlex>
+        <custom-button fxHide.lt-md reverse="true" (click)="setView(getNavigation().left_id)" label="{{getNavigation().left_label}}" icon="arrow_back"></custom-button>
+        <button class="nav-button text-medium" fxHide.gt-sm (click)="setView(getNavigation().left_id)" mat-button><mat-icon>arrow_back</mat-icon></button>
+      </div>
+      <span fxFlex class="text-medium nav-pagination" style="padding:0;text-align: center;">{{$portfolios[id].id}} / {{max_index}}</span>
+      <div fxFlex  fxLayout="row" fxLayoutAlign="end center">
+        <button class="nav-button text-medium" fxHide.gt-sm (click)="setView(getNavigation().right_id)" mat-button><mat-icon>arrow_forward</mat-icon></button>
+        <custom-button fxHide.lt-md (click)="setView(getNavigation().right_id)" label="{{getNavigation().right_label}}"></custom-button>
+      </div>
+    </div>
+  </div>
+</div>

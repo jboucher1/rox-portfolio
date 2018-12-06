@@ -1,0 +1,22 @@
+<div id="testimonials" fxLayout="column" class="container">
+  <span class="text-large">What others think</span>
+  <div class="testimonials-container">
+    <div class="testimonials-container-inner">
+      <div id="testimonials-inner">
+        <div fxLayout="column" *ngFor="let testimonial of $testimonials; let i = index" id="testimonial-{{i}}">
+          <span class="text-small" fxFlex>{{testimonial.description}}</span>
+          <span class="text-small" style="font-weight:600;">{{testimonial.author}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start center" class="text-medium" id="testimonials-navigation">
+    <div (click)="showToggle('left')">
+      <mat-icon>arrow_back</mat-icon>
+    </div>
+    {{showindex+1}} / {{$testimonials.length}}
+    <div (click)="showToggle('right')">
+      <mat-icon>arrow_forward</mat-icon>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="copy-button">
+  <mat-icon *ngIf="icon">{{onHover || icon}}</mat-icon>
+  <img *ngIf="iconSrc" src="{{iconSrc}}"/>
+  <span *ngIf="label">{{label}}</span>
+</div>

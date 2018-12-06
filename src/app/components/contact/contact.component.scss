@@ -1,0 +1,34 @@
+#contact{
+    span{
+        max-width:100%;
+    }
+    background-color:#c0feef;
+    padding:26px 0;
+    padding-bottom:80px;
+}
+
+.contact-linkedin{
+    $iconSize:25px;
+    img{
+        height:$iconSize;
+        width:$iconSize;
+    }
+}
+
+@media (max-width:599px){
+    .contact-linkedin{
+       img{
+            height:20px !important;
+            width:20px !important;
+        } 
+    }
+    
+}
+
+a{
+    font-size:inherit;
+    padding:16px;
+    text-decoration:none;
+    color:inherit;
+    font-weight:600;
+}

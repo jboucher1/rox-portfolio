@@ -1,0 +1,27 @@
+.work-card-wrapper{
+    padding-left:24px;
+    padding-bottom:24px;
+    max-width:1300px;
+    margin: 0 auto;
+}
+.work-card-inner{
+    padding-right:24px;
+    padding-top:24px;
+    
+}
+.work-card-info{
+    .text-small{
+        height:100%;
+    }
+    padding:24px;
+    background-color:#dfecff;
+    @media (min-width:959px){
+       height:100%; 
+    }
+    
+}
+.work-card-inner:nth-child(3n+1){
+    .work-card-info{
+    background-color:#e6fff9;
+    }
+}
