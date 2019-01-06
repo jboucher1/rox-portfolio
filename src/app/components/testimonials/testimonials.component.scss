@@ -26,15 +26,15 @@
 }
 #testimonials-navigation{
     
-    mad-icon{
-        font-size:2em;
-    }
     padding-top:16px;
     div:first-child{
         margin-left:-16px;
+        padding:8px 8px 8px 16px;
+
     }
     div{
-        padding:8px 16px;
+        cursor: pointer;
+        padding:8px 16px 8px 8px;
     }
 
 }

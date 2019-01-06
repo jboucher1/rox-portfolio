@@ -13,14 +13,22 @@ export class DataService {
     return [
       {
         id: 1,
+        title: 'Dating app',
+        subtitle: 'UI / UX design',
+        description: 'Here are a few samples of my work for a casual dating app. I created mainly high fidelity prototypes ready for development for iOS, Android and desktop. I looked at various areas like the sign-up steps, redesigned layouts, ensured a consistent colour theme throughout the app, marketing material and new features.',
+        thumbnail: '../../../assets/HomepageDating.jpg',
+        images: [34, 35, 36, 37, 38, 39]
+      },
+      {
+        id: 2,
         title: 'Water safety charity',
         subtitle: 'UI design. Motion design. Graphic design.',
         description: 'While working at the Royal National Lifeboat Institution (RNLI) I  collaborated with various teams like the creative team, digital team, copyrighters, marketing, etc to ensure the correct message was portrayed digitally. Taking direction from my creative brand manager, I worked on exciting new projects like launching their new shop online with Shopify, update different components on the website to ensure the best user journey and turn print into digital for their marketing campaigns.',
         thumbnail: '../../../assets/HomepageWaterSafety.jpg',
-        images: [22, 23, 24, 25, 26, 27]
+        images: [22, 23, 24, 25, 26, 27, 32, 33]
       },
       {
-        id: 2,
+        id: 3,
         title: 'Event software',
         subtitle: 'UI / UX design.',
         description: 'Here are a few samples of my work where I designed 2 products. One focusing on conference type events and the other catering to charity gala events. I created wireframes and high fidelity prototypes ready for development for for both CMS and user frontend on both products.',
@@ -28,7 +36,7 @@ export class DataService {
         images: [1, 2, 3, 4, 28, 29, 30, 31]
       },
       {
-        id: 3,
+        id: 4,
         title: 'Motion design',
         subtitle: 'FMCG adverts. Customer service training. Kids TV animation',
         description: 'This is a collection of motion design that I have produced so far through my career. I love motion design so will grab the opportunity to work with aftereffects when I can.',
@@ -36,7 +44,7 @@ export class DataService {
         images: [5, 6, 7, 8, 9]
       },
       {
-        id: 4,
+        id: 5,
         title: 'Event technology',
         subtitle: 'Graphic design. UI design.',
         description: 'While working with a fast growing event company I helped them re-brand 2 products, both online and print materials.',
@@ -237,6 +245,54 @@ export class DataService {
         link: null,
         icon: '',
         url: '../../../assets/EventSoftware4.jpg'
+      },
+      {
+        id: 32,
+        link: null,
+        icon: '',
+        url: '../../../assets/WaterSafety7.jpg'
+      },
+      {
+        id: 33,
+        link: null,
+        icon: '',
+        url: '../../../assets/WaterSafety8.jpg'
+      },
+      {
+        id: 34,
+        link: null,
+        icon: '',
+        url: '../../../assets/DatingApp1.jpg'
+      },
+      {
+        id: 35,
+        link: null,
+        icon: '',
+        url: '../../../assets/DatingApp2.jpg'
+      },
+      {
+        id: 36,
+        link: null,
+        icon: '',
+        url: '../../../assets/DatingApp3.jpg'
+      },
+      {
+        id: 37,
+        link: null,
+        icon: '',
+        url: '../../../assets/DatingApp4.jpg'
+      },
+      {
+        id: 38,
+        link: null,
+        icon: '',
+        url: '../../../assets/DatingApp5.jpg'
+      },
+      {
+        id: 39,
+        link: null,
+        icon: '',
+        url: '../../../assets/DatingApp6.gif'
       }
     ]
   };

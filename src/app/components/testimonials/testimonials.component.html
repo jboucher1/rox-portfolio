@@ -13,9 +13,11 @@
   <div fxLayout="row" fxLayoutAlign="start center" class="text-medium" id="testimonials-navigation">
     <div (click)="showToggle('left')">
       <mat-icon>arrow_back</mat-icon>
+      {{showindex+1}} 
     </div>
-    {{showindex+1}} / {{$testimonials.length}}
+   / 
     <div (click)="showToggle('right')">
+      {{$testimonials.length}}
       <mat-icon>arrow_forward</mat-icon>
     </div>
   </div>
